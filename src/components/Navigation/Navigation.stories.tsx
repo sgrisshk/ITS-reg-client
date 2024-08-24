@@ -16,3 +16,9 @@ type Story = StoryObj<Props>;
 export const Deafult:  Story = {
     args: {},
 };
+
+export const SchemeSelected: Story = {
+    args: {
+        activePath: '/scheme'
+    },
+};
