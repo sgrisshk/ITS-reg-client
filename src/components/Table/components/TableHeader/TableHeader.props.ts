@@ -1,3 +1,5 @@
 import type {HTMLAttributes} from 'react';
 
-export default interface Props extends HTMLAttributes<HTMLDataElement> {}
+export default interface Props extends HTMLAttributes<HTMLDataElement> {
+    optinons: string[];
+}
