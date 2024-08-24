@@ -18,10 +18,12 @@ const getTabTileClassNames = ({isActive}: {isActive: boolean}): string => {
     return `
         align-baseline
         py-2
+        font-normal
+        text-2xl
         hover:text-white hover:underline 
-        underline-offset-8 transition-all duration-200  decoration-2
+        underline-offset-8 transition-all duration-200  decoration-2 decoration-color-white-underline
         text-nowrap
-        ${isActive ? ' underline text-white' : 'text-gray-400'} 
+        ${isActive ? ' underline text-white' : 'text-color-white-unselected'} 
     `;
 };
 
@@ -38,7 +40,7 @@ const Navigation: FC<Props> = ({activePath, className, ...props}) => {
                                 href={item.path}
                                 className={`${getTabTileClassNames({
                                     isActive: item.path === activePath,
-                                })} `}>
+                                })}`}>
                                 {item.title}{' '}
                             </Link>
                         </li>
