@@ -1,0 +1,16 @@
+.indicator {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.indicator.normal {
+    background-color: #74ff51;
+    color: black;
+}
+
+.indicator.warning {
+    background-color: #ff3232;
+    color: white;
+}
