@@ -3,5 +3,5 @@ import { Option } from '../../Table.props';
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
     left?: React.ReactNode;
     right?: React.ReactNode;
-    options: Option[];
+    options?: Option[] | undefined;
 }
