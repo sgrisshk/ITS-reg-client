@@ -27,7 +27,7 @@ const TableBody: FC<Props> = ({left, right, options, className, ...props}) => {
                     >
                         <OptionsIcon />
                         {isPopOverVisible && (
-                            <Popover options={options}/>
+                            <Popover options={options} className='absolute'/>
                         )}
                     </div> }
             </div>
