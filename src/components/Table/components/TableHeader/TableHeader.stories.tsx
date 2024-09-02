@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react';
 import Props from './TableHeader.props';
 import TableHeader from '.';
-import { TableHeaderUsecaseDefault, TableHeaderUsecaseFull, TableHeaderUsecaseOnlyLeft, TableHeaderUsecaseOnlyRight } from './TableHeader.usecase';
+import { tableHeaderUsecaseDefault, tableHeaderUsecaseFull, tableHeaderUsecaseOnlyLeft, tableHeaderUsecaseOnlyRight } from './TableHeader.usecase';
 
 const actionsData = {};
 
@@ -16,24 +16,24 @@ type Story = StoryObj<Props>;
 
 export const Default: Story = {
     args: {
-        ...TableHeaderUsecaseDefault
+        ...tableHeaderUsecaseDefault
     },
 };
 
 export const Left: Story = {
     args: {
-        ...TableHeaderUsecaseOnlyLeft
+        ...tableHeaderUsecaseOnlyLeft
     },
 };
 
 export const Right: Story = {
     args: {
-        ...TableHeaderUsecaseOnlyRight
+        ...tableHeaderUsecaseOnlyRight
     },
 };
 
 export const Full: Story = {
         args: {
-        ...TableHeaderUsecaseFull
+        ...tableHeaderUsecaseFull
     },
 }

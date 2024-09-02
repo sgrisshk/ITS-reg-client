@@ -1,24 +1,30 @@
-import { TableBodyUsecaseEmptyTemplate, TableBodyUsecaseFull, TableBodyUsecaseRegBMSTU, TableBodyUsecaseRegVolonterHardaton, TableBodyUsecaseRegVolonterMero } from './components/TableBody/TableBody.usecase'
-import { TableHeaderUsecaseNameAuthor } from './components/TableHeader/TableHeader.usecase'
+import {
+  tableBodyUsecaseEmptytemplate,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseRegBMStU,
+  tableBodyUsecaseRegVolonterHardaton,
+  tableBodyUsecaseRegVolonterMero,
+} from './components/TableBody/TableBody.usecase';
+import {tableHeaderUsecaseNameAuthor} from '@/components/Table/components/TableHeader/TableHeader.usecase';
+import {tableHeaderUsecaseFull} from '@/components/Table/components/TableHeader/TableHeader.usecase';
 
-export const TableUsecaseDefault = 
-[
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
-    TableBodyUsecaseFull,
+export const tableUsecaseDefault = [
+  tableHeaderUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseFull,
+];
+
+export const tableUsecaseWithExamples = [
+  tableHeaderUsecaseNameAuthor,
+  tableBodyUsecaseEmptytemplate,
+  tableBodyUsecaseRegBMStU,
+  tableBodyUsecaseRegVolonterMero,
+  tableBodyUsecaseRegVolonterHardaton,
 ]
 
-export const TableUsecaseWithExamples = 
-[
-    TableHeaderUsecaseNameAuthor,
-    TableBodyUsecaseEmptyTemplate,
-    TableBodyUsecaseRegBMSTU,
-    TableBodyUsecaseRegVolonterMero,
-    TableBodyUsecaseRegVolonterHardaton,
-]

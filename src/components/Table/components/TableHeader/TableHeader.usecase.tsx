@@ -1,23 +1,22 @@
-export const TableHeaderUsecaseDefault = {
-    left: <p className='w-44'>left</p>,
-    right: <p className='w-44'>right</p>,
-}
+export const tableHeaderUsecaseDefault = {
+  left: 'left',
+  right: ['right']
+};
 
+export const tableHeaderUsecaseOnlyLeft = {
+  left: 'left'
+};
 
-export const TableHeaderUsecaseOnlyLeft = {
-    left: <p className='w-44'>left</p>,
-}
+export const tableHeaderUsecaseOnlyRight = {
+  right: ['right']
+};
 
-export const TableHeaderUsecaseOnlyRight = {
-    right: <p className='w-44'>right</p>,
-}
+export const tableHeaderUsecaseFull = {
+  left: 'left',
+  right: ['right1', 'right2', 'right3'],
+};
 
-export const TableHeaderUsecaseFull = {
-    left: <p className='w-44'>left</p>,
-    right: <><p className='w-44'>right1</p> <p className='w-44'>right2</p> <p className='w-44'>right3</p></>,
-}
-
-export const TableHeaderUsecaseNameAuthor = {
-    left: <p className='w-44'>Название</p>,
-    right: <><p className='w-44'>Автор</p></>,
-}
+export const tableHeaderUsecaseNameAuthor = {
+  left: 'Название',
+  right: ['Автор']
+};

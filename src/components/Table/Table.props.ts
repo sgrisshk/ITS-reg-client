@@ -1,10 +1,5 @@
 import type {HTMLAttributes} from 'react';
-import TableBodyProps  from './components/TableBody/TableBody.props';
-export interface Option {
-    icon: React.ReactElement;
-    text: string;
-    callback: VoidFunction;
-}
+import TableBodyProps  from '@/components/Table/components/TableBody/TableBody.props';
 
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
     title?: string;

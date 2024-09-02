@@ -1,7 +1,7 @@
 import type {HTMLAttributes} from 'react';
-import { Option } from '../../Table.props';
+import {Option} from '@/components/Table/components/Popover/Popover.props';
 export default interface Props extends HTMLAttributes<HTMLDivElement> {
-    left?: React.ReactNode;
-    right?: React.ReactNode;
-    options?: Option[] | undefined;
+  left?: string;
+  right?: string[];
+  options?: Option[];
 }

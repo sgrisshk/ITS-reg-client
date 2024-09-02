@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react';
 import Props from './PopoverTile.props';
 import PopoverTile from '.';
-import {DefaultUsecase} from './PopoverTile.usecase';
+import {defaultUsecase} from './PopoverTile.usecase';
 
 const actionsData = {};
 
@@ -15,5 +15,5 @@ export default meta;
 type Story = StoryObj<Props>;
 
 export const Default: Story = {
-  args: {...DefaultUsecase},
+  args: {...defaultUsecase},
 };

@@ -1,13 +1,19 @@
 import {Meta, StoryObj} from '@storybook/react';
 import Props from './TableBody.props';
 import TableBody from '.';
-import { TableBodyUsecaseDefault,TableBodyUsecaseFull, TableBodyUsecaseOnlyLeft, TableBodyUsecaseOptions, TableBodyUsecaseOnlyRight } from './TableBody.usecase';
+import {
+  tableBodyUsecaseDefault,
+  tableBodyUsecaseFull,
+  tableBodyUsecaseOnlyLeft,
+  tableBodyUsecaseOptions,
+  tableBodyUsecaseOnlyRight,
+} from './TableBody.usecase';
 
 const actionsData = {};
 
 const meta: Meta<Props> = {
-    component: TableBody,
-    args: {...actionsData},
+  component: TableBody,
+  args: {...actionsData},
 };
 
 export default meta;
@@ -15,31 +21,31 @@ export default meta;
 type Story = StoryObj<Props>;
 
 export const Default: Story = {
-    args: {
-        ...TableBodyUsecaseDefault
-    },
+  args: {
+    ...tableBodyUsecaseDefault,
+  },
 };
 
 export const Left: Story = {
-    args: {
-        ...TableBodyUsecaseOnlyLeft
-    },
+  args: {
+    ...tableBodyUsecaseOnlyLeft,
+  },
 };
 
 export const Right: Story = {
-    args: {
-        ...TableBodyUsecaseOnlyRight
-    },
+  args: {
+    ...tableBodyUsecaseOnlyRight,
+  },
 };
 
 export const Options: Story = {
-    args: {
-        ...TableBodyUsecaseOptions
-    },
+  args: {
+    ...tableBodyUsecaseOptions,
+  },
 };
 
 export const Full: Story = {
-        args: {
-        ...TableBodyUsecaseFull
-    },
-}
+  args: {
+    ...tableBodyUsecaseFull,
+  },
+};
