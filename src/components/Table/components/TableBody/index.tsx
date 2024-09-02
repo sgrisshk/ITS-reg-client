@@ -17,7 +17,7 @@ const TableBody: FC<Props> = ({left, right, options, className, ...props}) => {
     return (
         <div className={`${className} flex justify-between w-full bg-back-secondary  items-center p-4 text-white`} {...props}>
             {left}
-            <div className='flex w-full  text-label-dark-secondary justify-end gap-20 items-center'>
+            <div className='flex w-full  text-label-dark-secondary justify-end items-center text-nowrap'>
                 {right} 
                 {options &&                     
                 <div 

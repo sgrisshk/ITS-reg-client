@@ -1,6 +1,7 @@
-import { TableBodyUsecaseFull } from './components/TableBody/TableBody.usecase'
+import { TableBodyUsecaseEmptyTemplate, TableBodyUsecaseFull, TableBodyUsecaseRegBMSTU, TableBodyUsecaseRegVolonterHardaton, TableBodyUsecaseRegVolonterMero } from './components/TableBody/TableBody.usecase'
+import { TableHeaderUsecaseNameAuthor } from './components/TableHeader/TableHeader.usecase'
 
-export const TableUsecaseWithExamples = 
+export const TableUsecaseDefault = 
 [
     TableBodyUsecaseFull,
     TableBodyUsecaseFull,
@@ -11,4 +12,13 @@ export const TableUsecaseWithExamples =
     TableBodyUsecaseFull,
     TableBodyUsecaseFull,
     TableBodyUsecaseFull,
+]
+
+export const TableUsecaseWithExamples = 
+[
+    TableHeaderUsecaseNameAuthor,
+    TableBodyUsecaseEmptyTemplate,
+    TableBodyUsecaseRegBMSTU,
+    TableBodyUsecaseRegVolonterMero,
+    TableBodyUsecaseRegVolonterHardaton,
 ]

@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react';
 import Props from './Table.props';
 import Table from '.';
-import { TableUsecaseWithExamples } from './Table.usecase';
+import { TableUsecaseWithExamples, TableUsecaseDefault } from './Table.usecase';
 
 const actionsData = {};
 
@@ -15,6 +15,14 @@ export default meta;
 type Story = StoryObj<Props>;
 
 export const Default: Story = {
+    args: {
+        title: 'Тест',
+        params: TableUsecaseDefault,
+    },
+};
+
+
+export const Example: Story = {
     args: {
         title: 'Начать с примера:',
         params: TableUsecaseWithExamples,
