@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from '@storybook/react';
 import {Props} from './Navigation.props';
 import Navigation from './';
-
+import {navigationUsecaseDefault} from '../../usecases/MainNavigation';
 const actionsData = {};
 
 const meta: Meta<Props> = {
@@ -13,12 +13,12 @@ export default meta;
 
 type Story = StoryObj<Props>;
 
-export const Deafult:  Story = {
+export const Deafult: Story = {
     args: {},
 };
 
 export const SchemeSelected: Story = {
     args: {
-        activePath: '/scheme'
+        ...navigationUsecaseDefault,
     },
 };

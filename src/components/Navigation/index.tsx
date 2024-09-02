@@ -2,17 +2,8 @@ import type {FC} from 'react';
 import {Props} from './Navigation.props';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
+import React from 'react';
 
-interface NavigationTab {
-    title: string;
-    path: string;
-}
-
-const navigationTabs: NavigationTab[] = [
-    {title: 'Схема', path: '/scheme'},
-    {title: 'Рассылки', path: '/posts'},
-    {title: 'Настройки', path: '/settings'},
-];
 
 const getTabTileClassNames = ({isActive}: {isActive: boolean}): string => {
     return `
@@ -27,7 +18,7 @@ const getTabTileClassNames = ({isActive}: {isActive: boolean}): string => {
     `;
 };
 
-const Navigation: FC<Props> = ({activePath, className, ...props}) => {
+const Navigation: FC<Props> = ({navigationTabs,activePath, className, ...props}) => {
     const activeNextPathName = usePathname();
     activePath = activePath === undefined ? activeNextPathName : activePath;
     return (
