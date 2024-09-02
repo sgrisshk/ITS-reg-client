@@ -1,11 +1,11 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from 'tailwindcss/defaultTheme'
+import type {Config} from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -14,7 +14,7 @@ const config: Config = {
       },
       colors: {
         'support-separator': '#33FFFFFF',
-        'support-overlay' : '#52000000',
+        'support-overlay': '#52000000',
         'label-primary': '#FFFFFF',
         'label-secondary': '#99FFFFFF',
         'label-tertiary': '#66FFFFFF',
@@ -25,10 +25,12 @@ const config: Config = {
         'color-grey': '#8E8E93',
         'color-gray-light': '#48484A',
         'color-white': '#FFFFFF',
+        'color-white-unselected': 'rgba(255, 255, 255, 0.6)',
+        'color-white-underline': 'rgba(255, 255, 255, 0.8)',
         'back-primary': '#161618',
         'back-secondary': '#252528',
         'back-elevated': '#3C3C3F',
-      }
+      },
     },
   },
   plugins: [],
