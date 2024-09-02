@@ -1,0 +1,8 @@
+import type {FC} from 'react';
+import Props from './TableLayout.props';
+
+const TableLayout: FC<Props> = ({children, className, ...props}) => {
+    return <div className='rounded-2.5xl overflow-hidden'>{children}</div>;
+};
+
+export default TableLayout;
